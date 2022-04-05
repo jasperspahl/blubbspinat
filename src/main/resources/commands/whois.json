@@ -1,0 +1,24 @@
+{
+  "name": "whois",
+  "description": "Get more info about a member",
+  "name_localizations": {
+    "de": "werist"
+  },
+  "description_localizations": {
+    "de": "Hol dir mehr Informationen ueber eine Person"
+  },
+  "options": [
+    {
+      "name": "user",
+      "name_localizations": {
+        "de": "Benutzer"
+      },
+      "description": "User",
+      "description_localizations": {
+        "de": "Benutzer"
+      },
+      "type": 6,
+      "required": true
+    }
+  ]
+}
