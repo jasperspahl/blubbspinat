@@ -43,7 +43,7 @@ public class GlobalCommandRegistrar implements ApplicationRunner {
         }
 
         applicationService.bulkOverwriteGlobalApplicationCommand(applicationId, commands)
-                .doOnNext(data -> log.info("Successfully registered Global Commands {}", data.name()))
+                .doOnNext(data -> log.info("Successfully registered Global Command {}", data.name()))
                 .doOnError(e -> log.error("Failed to register global commands", e))
                 .subscribe();
     }

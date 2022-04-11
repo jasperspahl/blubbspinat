@@ -45,6 +45,7 @@ public class BotConfiguration {
             log.info("Client created and logged in. Continuing with listeners");
 
             for (EventListener<T> listener : eventListeners) {
+                assert client != null;
                 client.on(listener.getEventType())
                         .flatMap(listener::execute)
                         .onErrorResume(listener::handleError)

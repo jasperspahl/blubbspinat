@@ -73,6 +73,7 @@ public class WhoIsUser {
                 ", discordId=" + discordId +
                 ", username='" + username + '\'' +
                 ", description='" + description + '\'' +
+                ", guildId='" + guildId + '\'' +
                 '}';
     }
 
